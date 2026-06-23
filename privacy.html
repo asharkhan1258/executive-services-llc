@@ -3,16 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive Services</title>
+    <title>VERIZON TECH BILLS LLC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     
 
+
+<!-- Cart Offcanvas -->
+<div class="offcanvas offcanvas-end ldd-cart-offcanvas" tabindex="-1" id="lddCartOffcanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title fw-bold">
+      <i class="fa-solid fa-cart-shopping me-2"></i>
+      Your Cart
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <div id="lddCartItems"></div>
+
+    <div class="ldd-cart-empty text-center py-5" id="lddCartEmpty">
+      <i class="fa-regular fa-heart fs-1 mb-3"></i>
+      <p class="mb-0">Your cart is empty.</p>
+    </div>
+
+    <div class="ldd-cart-total-box mt-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <strong>Total:</strong>
+        <strong id="lddCartTotal">$0.00</strong>
+      </div>
+
+      <a href="tel:+18886606097" class="btn ldd-purchase-all-btn w-100 mt-3">
+        <i class="fa-solid fa-phone me-2"></i>
+        Purchase Now
+      </a>
+
+      <button class="btn ldd-clear-cart-btn w-100 mt-2" type="button" id="lddClearCart">
+        Clear Cart
+      </button>
+    </div>
+  </div>
+</div>
 
 <header class="ldd-header  bg-white">
 
@@ -25,7 +62,7 @@
         <!-- Logo -->
         <div class="col-8 col-lg-5">
           <a href="/" class="ldd-logo d-inline-block text-decoration-none">
-            <h2 class="text-dark">Executive Services</h2>
+            <h2 class="text-dark">VERIZON TECH BILLS LLC</h2>
           </a>
         </div>
 
@@ -111,8 +148,15 @@
             <a class="nav-link" href="terms.html">Terms &amp; Condition</a>
           </li>
 
+       
         </ul>
       </div>
+
+      <button class="btn ldd-cart-main-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#lddCartOffcanvas">
+        <i class="fa-solid fa-cart-shopping me-2"></i>
+        Cart
+        <span class="badge text-bg-light ms-2" id="lddCartCount">0</span>
+      </button>
 
     </div>
   </nav>
@@ -154,7 +198,7 @@
           </div>
 
           <p>
-            This Privacy Policy describes how <strong>Executive Services</strong>
+            This Privacy Policy describes how <strong>VERIZON TECH BILLS LLC</strong>
             (“Company,” “we,” “us,” or “our”) collects, uses, and protects your information
             when you visit our website and use our services. By using our website, you agree
             to the collection and use of information in accordance with this policy.
@@ -164,9 +208,8 @@
 
           <h2>1. Company Information</h2>
           <p>
-            <strong>Executive Services</strong><br>
-            328 N Shenango St<br>
-            New Castle, PA 16101, USA<br>
+            <strong>VERIZON TECH BILLS LLC</strong><br>
+            4001 WATONGA BOULEVARD AРТ 2720 HOUSTON TX 77092<br>
             Phone: +1 (888) 660-6097<br>
             Email:
             <a href="mailto:executives.svcs.llc@gmail.com">
@@ -220,7 +263,7 @@
           <h2>4. Services Covered by This Policy</h2>
           <p>
             This Privacy Policy applies to all services offered by
-            <strong>Executive Services</strong>, including:
+            <strong>VERIZON TECH BILLS LLC</strong>, including:
           </p>
 
           <ul>
@@ -367,8 +410,8 @@
           </p>
 
           <p>
-            <strong>Executive Services</strong><br>
-            570 Eagle CT , Kissimmee FL 34759<br>
+            <strong>VERIZON TECH BILLS LLC</strong><br>
+            4001 WATONGA BOULEVARD AРТ 2720 HOUSTON TX 77092<br>
             Phone: +1 (888) 660-6097<br>
             Email:
             <a href="mailto:executives.svcs.llc@gmail.com">
@@ -399,7 +442,7 @@
           <div class="ldd-footer-brand">
 
            <a  class="ldd-footer-logo d-inline-block mb-4 text-decoration-none text-white">
-              <h2>Executive Services</h2>
+              <h2>VERIZON TECH BILLS LLC</h2>
             </a>
 
             <ul class="ldd-footer-contact list-unstyled mb-4">
@@ -408,7 +451,7 @@
                 <span class="ldd-footer-icon">
                   <i class="fa-solid fa-location-dot"></i>
                 </span>
-                <span>570 Eagle CT , Kissimmee FL 34759</span>
+                <span>4001 WATONGA BOULEVARD AРТ 2720 HOUSTON TX 77092</span>
               </li>
 
               <li class="d-flex align-items-start gap-3 mb-3">
@@ -490,7 +533,7 @@
   <div class="ldd-footer-bottom py-3">
     <div class="container">
       <p class="mb-0 text-center">
-        Copyright © <strong>Executive Services</strong>. All Rights Reserved.
+        Copyright © <strong>VERIZON TECH BILLS LLC</strong>. All Rights Reserved.
       </p>
     </div>
   </div>
