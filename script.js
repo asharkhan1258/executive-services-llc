@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-  const lddPurchasePhone = "tel:+18886606097";
+  const lddPurchasePhone = "tel:+12519014801";
 
   const serviceCards = document.querySelectorAll(".ldd-service-card");
   const cartItemsBox = document.getElementById("lddCartItems");
